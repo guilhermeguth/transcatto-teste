@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transcatto - Transporte Executivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #e30613;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #e30613;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+    }
+
+    .cta {
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .cta button {
+      background-color: #e30613;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .footer-section h4 {
+      color: #e30613;
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Transcatto</h1>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Transporte com Segurança e Conforto</h2>
+      <p>Atendemos todo o Brasil com excelência e pontualidade.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <button>Solicite um Orçamento</button>
+  </section>
+
+  <footer>
+    <div class="footer-section">
+      <h4>Contato</h4>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>Email: contato@transcatto.com.br</p>
+    </div>
+    <div class="footer-section">
+      <h4>Localização</h4>
+      <p>Rua das Empresas, 123<br>São Paulo - SP</p>
+    </div>
+    <div class="footer-section">
+      <h4>Redes Sociais</h4>
+      <div class="social-icons">
+        <a href="#">&#x1F426; Instagram</a>
+        <a href="#">&#x1F426; Facebook</a>
+        <a href="#">&#x1F426; WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
